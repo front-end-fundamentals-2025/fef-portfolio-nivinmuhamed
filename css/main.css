@@ -1,10 +1,14 @@
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    background-color: blanchedalmond;
+    background-color: rgb(241, 232, 217);
 }
 
 /*style header*/
+
+header {
+  display: flex;
+}
 
 #logo {
   font-weight: 600;
@@ -16,6 +20,11 @@
 ul {
   list-style: none;
   padding-left: 0;
+  display: flex;
+}
+
+li {
+  margin-left: 2rem;
 }
 
 a {
@@ -23,7 +32,7 @@ a {
 }
 
 .main-img {
-  width: 30%;
+  width: 25%;
 }
 
 footer {
