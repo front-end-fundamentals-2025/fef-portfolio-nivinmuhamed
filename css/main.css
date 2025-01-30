@@ -31,20 +31,45 @@ a {
   color: black;
 }
 
-.category-container {
-  display: grid; 
-  grid-template-columns: repeat(3, 1fr) ;
+
+
+@media screen and (max-width: 540px) {
+  .category-container, ul {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 530px) {
+  .category-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr) ;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .category-container {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr) ;
+  }
 }
 .main-img {
-  width: 25%;
+  width: 15%;
 }
 
 .project-img {
   width: 100%;
 }
+
 footer {
   border-top: 2px solid black;
   margin-top: 5px;
   margin-bottom: 5px;
 
 }
+
