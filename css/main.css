@@ -11,6 +11,10 @@ header {
   justify-content: center;
 }
 
+/*animation*/
+
+
+
 li {
   margin-left: 2rem;
 }
@@ -65,6 +69,7 @@ a {
 
 .main-img {
   width: 15%;
+  
 }
 
 .project-img {
