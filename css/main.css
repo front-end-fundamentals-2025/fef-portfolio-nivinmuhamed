@@ -67,6 +67,13 @@ a {
   }
 }
 
+/*main*/
+
+.text {
+  text-align:right;
+}
+
+
 .main-img {
   width: 15%;
   
