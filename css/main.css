@@ -1,7 +1,10 @@
 * {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  background-color: rgb(234, 214, 238);
+}
+
+body {
+  background-color: rgb(116, 145, 179);
 }
 
 /*style header*/
@@ -13,18 +16,34 @@ header {
 
 /*animation*/
 
+#index-logo {
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
 
+@keyframes shake {
+  25% {
+    transform: scale(1.2);
+  }
+
+  40% {
+    transform: rotate(-20deg) scale(1.2);
+  }
+}
 
 li {
   margin-left: 2rem;
 }
 
-#logo {
+#logo,
+#index-logo {
   font-weight: 600;
   font-size: 1.5rem;
   display: flex;
   padding: 0.1px;
 }
+
 ul {
   list-style: none;
   padding-left: 0;
@@ -70,13 +89,11 @@ a {
 /*main*/
 
 .text {
-  text-align:right;
+  text-align: left;
 }
-
 
 .main-img {
   width: 15%;
-  
 }
 
 .project-img {
@@ -89,43 +106,18 @@ footer {
   margin-bottom: 20px;
 }
 
-/*animation example*/
+/*forms input class, to make them bigger*/
 
-/*@keyframes color-animation {
-  from {
-    background-color: aquamarine;
-  }
-  to {
-    background-color: black;
-  }
+.large-input {
+  width: 300px;
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(116, 145, 179);
 }
-*/
-/*@keyframes shake {
-  25% {
-    transform: scale(1.2);
-  }
 
-  40%{
-    transform: rotate(-20deg) scale(1.2);
-  }
-
-  50% {
-    transform: rotate(20deg) scale(1.2);
-  }
-
-  60%{
-    transform: rotate(-20deg) scale(1.2);
-  }
-
-  70% {
-    transform: rotate(20deg) scale(1.2);
-  }
-
-  80%{
-    transform: rotate(-20deg) scale(1.2);
-  }
-
-  90% {
-    transform: rotate(20deg) scale(1.2);
-  }
-}*/
+.large-button {
+  width: 75px;
+  height: 40px;
+  font-size: 16px;
+  background-color: rgb(116, 145, 179);
+}
