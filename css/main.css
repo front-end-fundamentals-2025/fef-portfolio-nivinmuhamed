@@ -92,8 +92,14 @@ a {
   text-align: left;
 }
 
+.reset1 {
+  list-style: none;
+  margin: 0;
+}
+
 .main-img {
-  width: 15%;
+  width: 10%;
+  margin-left: 2px;
 }
 
 .project-img {
