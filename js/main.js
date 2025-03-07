@@ -1,4 +1,4 @@
-//help from classmate Ida Segolsson// 
+//help from classmate Ida Segolsson//
 
 const selfie = document.getElementById("selfie");
 const reset = document.getElementById("reset");
